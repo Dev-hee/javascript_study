@@ -135,5 +135,24 @@
 * `const 이름 = [{key:value, key:value,},{},{}...]`
 * `const 이름 = [{key:[v1, v2], key:value},{},{}...]`
 
-* 외부 script를 Head 태그내에 작성하면 HTML 읽기전으로 DCM 연결 시  undefinde가 출력된다.
+* 외부 script를 Head 태그내에 작성하면 HTML 읽기전으로 DCM 연결 시 undefinde가 출력된다.
 * 외부 script를 body 태그내에 모든 태그 입력 후 가장 아래쪽에 작성하면 모든 태그를 읽은 후이기 때문에 JS 내에서 DOM연결 시 올바른 DOM정보가 출력된다.
+----------------------
+## BOM,DOM
+### BOM(Browser Objerct Model)
+* `window` 최상위 객체를 기준으로 속성, 메소드 이용
+* 자주 사용하는 속성, 메소드 : `alert()`, `prompt()`, `confirm()`,`locaton()` 등...
+* `window.alert();`
+* `alert();`
+### DOM(Document Objerct Model)
+* `document` 본문 최상위 객체 대상으로 속성, 메소드 이용, 생략할 수 없다.
+#### DOM 선택 시 자주 사용하는 메서드(함수) 종류
+* `document.getElementsByTagName("태그명")`
+* `document.getElementsByClassName("클래스명")`
+* `document.getElementsById("아이디명")`
+* `document.querySelector("태그명")`
+* `document.querySelector(".클래스명")`
+* `document.querySelector("#아이디명")`
+* `document.querySelectorAll("태그명")`
+* `document.querySelectorAll(".클래스명")`
+* `getElements...`와 `querySelecoerAll` 함수는 `index`를 사용해서 대상을 선택하므로 사용 시 주의가 필요하다.
