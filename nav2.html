@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네비게이션 - 2</title>
+    <script src="./script/nav2.js" defer></script>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        #wrap {
+            background:linear-gradient(90deg, rgba(9,94,169, 1) 0%, transparent 50%, rgba(26,147,128, 1) 100%);
+            width:100%; height:100vh;
+        }
+        #h_bg {background:#fff;}
+        header {
+            width: 1200px;
+            height:100px;
+            margin:0 auto;
+            padding: 0 40px;
+            display:flex; align-items:center;
+            justify-content: space-around;
+        }
+        header h1 {
+            color: #fff;
+            line-height: 1.5;
+            font-size: 3.5rem;
+            letter-spacing: -1px;}
+        header h1 a{}
+        header h1 a img{}
+        header nav{}
+        header nav .gnb{
+            display: flex;
+        }
+        header nav .gnb>li{
+            background-color:lime;
+            width: 200px; position: relative;
+        }
+        header nav .gnb>li>a{
+            background-color: aqua;
+            display: block; line-height: 40px;
+            text-transform:uppercase;  /*uppercase 대문자*/
+        }
+        header nav .gnb>li>.sub{
+            position: absolute; left: 0; top:0; top:40px;
+            background-color:#ffffff;
+            width: 100%; height: 300px;
+        }
+        header nav .gnb>li> .sub:after{
+            content: ''; display: block;
+            width: 1px; height: 270px; background:#d5d5d5;
+            position: absolute; right: 5px; top:15px;
+        }
+        header nav .gnb>li:last-child > .sub:after{display: none;
+}
+        header nav .gnb>li>.sub li{}
+        header nav .gnb>li>.sub a{
+            display: block;
+            line-height: 50px;
+            display: block; line-height:50px;
+            padding-left: 5px;
+        }
+        main{}
+        main .visual{
+            height:calc(100vh - 100px) ;
+            background-position: center;
+            background-image: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-size: cover;
+        }
+        main .visual h1{
+            text-align: center;
+            color: #fff;
+            font-size: 4rem;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        main .visual h1 span{}
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="h_bg">
+    <header>
+        <h1><a href="#"><img src="./project/images/logo.jpg" alt="POSCO GROUP BROCHURE"></a></h1>
+        <nav>
+            <ul class="gnb"> 
+                <li><a href="#">posco overview</a>
+                    <ul class="sub">
+                        <li><a href="#">POSCO Group</a></li>
+                        <li><a href="#">Milesones</a></li>
+                        <li><a href="#">POSCO Highights</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">POSCO VISION</a>
+                    <ul class="sub">
+                        <li><a href="#">경영이념</a></li>
+                        <li><a href="#">기업시민현장</a></li>
+                        <li><a href="#">기업시민 5대 비전</a></li>
+                        <li><a href="#">안전경영</a></li>
+                        <li><a href="#">환경경영</a></li>
+                        <li><a href="#">포스코그룹 비전</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">POSCO BUSINESS</a>
+                    <ul class="sub">
+                        <li><a href="#">철강</a></li>
+                        <li><a href="#">글로벌인프라</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div> 
+    <main>
+        <div class="visual">
+            <h1>철강을 넘어<span>Green & Mobility</span>중심으로의 변화</h1>
+    </main>
+</div>
+</body>
+</html>
