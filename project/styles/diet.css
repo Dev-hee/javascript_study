@@ -1,20 +1,38 @@
 /* 디자인은 심미적으로 자유롭게*/
-@import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
 * {
     margin:0; padding:0;
-    font-size:1.1em; font-weight:400;
-    font-family:'Single Day';
+    font-size:1.25em; font-weight:400;
+    font-family:'Yeon Sung';
 }
 main {
     max-width:700px; 
-    margin:30px auto 0; padding:50px 0;
-    text-align:center;
+    margin:30px auto 0; padding:30px 50px;
+    text-align:left;
     border-radius:20px;
     background:#ffe81a48;
+    background-image: url(./dite.jpg);
 }
 main h1 {
-    font-size:3rem; padding:30px 0;
+    padding-top: 40px;
+    font-size: 2.5rem;
+    color:#1f036d
 }
+
+main p {
+    font-size: 1.25rem; font-weight: 700;
+    color:#000000;
+    margin:6px 0 30px ;
+}
+
+main ul {
+}
+
+main ul li{
+    font-size: 1.0rem; font-weight: 700;
+    margin:6px 0 20px ;
+}
+
 main p img {width:80%; border-radius:20px;}
 main .calc {margin:30px 0;}
 main .calc input {
@@ -22,16 +40,28 @@ main .calc input {
     width:200px; height:50px;
     outline:none; text-align:center;
 }
-main .result_wrap {
+main .result{
     display:flex; flex-flow:column;
     padding:0 60px;
 }
-main .result_wrap button {
-    color:#fff; background:#ff3939;
+main .result button {
+    color:#fff; background: #3779c5;
     padding:20px 0; cursor:pointer;
     border:0; border-radius:10px;
 }
-main .result_wrap #result {
+main .result #result {
     margin:20px 0; text-align:center; outline:none;
-    font-size:2rem; border:1px solid #aaa;
+    font-size:2rem; border:1px solid #187571;
+}
+main #btn #result {
+    width:300px; height: 30px;
+    background-color: #3779c5;
+    border: 1px solid #187571;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+}
+main #btn #result:hover {
+    background-color:  #3779c5;
 }
