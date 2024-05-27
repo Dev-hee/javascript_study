@@ -23,7 +23,7 @@ main .cart_wrap .top label::after{
 } 
 main .cart_wrap .top label.select_num{}
 main .cart_wrap .top .select_delete{}
-/*장바구니 아이템 영역*/
+/* ===========장바구니 아이템 영역 */
 main .cart_wrap .item_wrap { background-color:lime;}
 main .cart_wrap .item_wrap .item{ 
     display: flex;
@@ -40,8 +40,13 @@ main .cart_wrap .item_wrap .item >a {
         'photo name'
         'photo detail';
 }
-main .cart_wrap .item_wrap .item >a .photo{width:70px; height: 80px; background-color: gray;}
-main .cart_wrap .item_wrap .item >a .photo img{}
+main .cart_wrap .item_wrap .item >a .photo{
+    grid-area:photo;
+    width:70px; height:80px; background:gray;}
+main .cart_wrap .item_wrap .item >a .photo img{
+    grid-area:photo;
+    width:70px; height:80px; background:gray;
+}
 main .cart_wrap .item_wrap .item >a h2{
     grid-area: neme;
 }
