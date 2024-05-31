@@ -1,0 +1,76 @@
+<!-- bg_scroll.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bg_scroll</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script src="./script/bg_scroll2.js" defer></script>
+    <style>
+        body, html {scroll-behavior: smooth;}
+        header {
+            width:100%; position:fixed; left:0; top:0; height:50px;
+            padding:50px;
+        }
+        header nav a {padding:10px; display:inline-block; text-decoration:none; color:#222;}
+        header nav a:hover {border-bottom:2px solid #222;}
+        main {width:100%;}
+        main .bg {height:900px; overflow:hidden; background-size:cover;}
+        main .bg:nth-child(1) {background-image:url(./images/bg_scroll/01.png)}
+        main .bg:nth-child(2) {background-image:url(./images/bg_scroll/02.png)}
+        main .bg:nth-child(3) {background-image:url(./images/bg_scroll/03.png)}
+        main .bg:nth-child(4) {background-image:url(./images/bg_scroll/04.png)}
+        .link{
+            position: fixed; 
+            display:flex;
+            flex-flow: column nowrap;
+            top:50%; left: 50px;
+            transform: translateY(-50%);
+        }
+        .link a{
+            background: #222;
+            width: 20px; height: 2px; margin-bottom: 10px;
+            transition: all 0.5s;
+        }
+        .link .active{width: 100px; background: #fff;
+        }
+        .link a:hover{background: #555;
+        }
+        .bg{height: 100vh;}
+        /*mouse 디자인*/
+        .mouse{
+            width: 30px; height:30px;
+            border-radius: 50%;
+            border: 5px solid #555;
+            position: fixed; left:0; top:0; /*초기 위치*/
+            transform:translate(-50%, -50%);
+            pointer-events: none; /*마우스 클릭 대상 해제 필수 !! */
+        }
+    </style>
+</head>
+<body>
+        <div class="mouse"></div>
+        <div class="circle">
+        </div><!-- 마우스 -->
+        <header>
+            <h1>Interior view</h1>
+            <nav>
+                <a href="#pst1">A</a>
+                <a href="#pst2">B</a>
+                <a href="#pst3">C</a>
+                <a href="#pst4">D</a>
+            </nav>
+        </header>
+        <main>
+            <div class="bg bg1" id="pst1"></div>
+            <div class="bg bg2" id="pst2"></div>
+            <div class="bg bg3" id="pst3"></div>
+            <div class="bg bg4" id="pst4"></div>
+        </main>
+        <div class="link">
+            <a href="#" title="인테리어 a형 보기"></a>
+            <a href="#" title="인테리어 b형 보기"></a>
+            <a href="#" title="인테리어 c형 보기"></a>
+            <a href="#" title="인테리어 d형 보기"></a>
+        </div>
