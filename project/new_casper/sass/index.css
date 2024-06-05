@@ -19,7 +19,7 @@ header > nav .sub_bg {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 0x;
+  top: 0;
   top: 70px;
 }
 header > nav .gnb {
@@ -39,8 +39,10 @@ header > nav .gnb > li .sub {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 0x;
+  top: 0;
   top: 50px;
+  width: -moz-max-content;
+  width: max-content;
 }
 header > nav .gnb > li .sub li a {
   font-size: 0.91rem;
@@ -81,6 +83,15 @@ header .lnb .m_nav nav .gnb > li > a {
   border-bottom: 1px solid #002c5f;
   margin: 0 10px;
   line-height: 40px;
+}
+header .lnb .m_nav nav .gnb > li .sub {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  width: -moz-max-content;
+  width: max-content;
+  top: 50px;
 }
 header .lnb .m_nav nav .gnb > li .sub li a {
   display: block;
@@ -207,7 +218,7 @@ main .design h1 {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 0x;
+  top: 0;
   text-align: center;
   z-index: -1;
 }
