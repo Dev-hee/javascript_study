@@ -11,7 +11,7 @@ main {
     text-align:left;
     border-radius:20px;
     background:#ffe81a48;
-    background-image: url(./dite.jpg);
+    background: url(../images/dite.jpg);
 }
 main h1 {
     padding-top: 40px;
@@ -58,7 +58,7 @@ main #btn #result {
     background-color: #3779c5;
     border: 1px solid #187571;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size:0.8rem;
     font-weight: 700;
     color: #fff;
 }
