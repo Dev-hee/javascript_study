@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!--플러그인 필수 JS cdn 연결-->
-    <script src="https://unpkg.com/swiper/swiper-bundle.js" defer></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <style>
         main {
             position: relative; /*페이지번호, 이전 다음기준*/
@@ -49,26 +49,26 @@
                 <div class="swiper-slide">3</div>
             </div>
         </div>
-        <div class="swiper-pagination"><div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    </main>
+        <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </main>
     <!--슬라이드의 부가속성(페이짓번호, 이전 다음 버튼 등)-->
     <script>
         const visual_s = new Swiper('#visual_slide',{
             autoplay:{delay:1000},
             loop:true,
-        // swiper-pagination JS
-        pagination :{
-            el:'main .swiper-pagination',//부모작성
-            type:'bullets',//필수작성
-        }
-        //navigation js
-        navigation:{
-            nextEl:'main .swiper-button-next',
-            prevEl:'main .swiper-button-prev',
-        },
-    })
+            // swiper-pagination JS
+            pagination :{
+                el:'main .swiper-pagination',//부모작성
+                type:'bullets',//필수작성
+            },
+            //navigation js
+            navigation:{
+                nextEl:'.swiper-button-next',
+                prevEl:'.swiper-button-prev',
+            },
+        })
 
     </script>
 </body>
